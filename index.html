@@ -30,7 +30,7 @@
 </head>
 <body>
 	<!-- audio -->
-	<audio id="audio_id" loop>
+	<audio id="audio_id" loop controls>
 		<source src="audio/Sakura-Romance_Royalty-Free-Music.mp3" type="audio/mp3">
 		Your browser does not support the audio element.
 	</audio>
@@ -83,7 +83,6 @@
 		});
 
 		document.addEventListener('DOMContentLoaded', function () {
-			document.getElementById("audio_id").audio.play();
 			var petals = document.querySelectorAll(".petal");
 			$("#sakura").css('opacity', '1');
 			animatePetals();
